@@ -11,6 +11,9 @@
             <div class="card-body">
                 <h4>Description:</h4>
                 <p>{{ $project->description }}</p>
+                <h5>
+                    <b>Type: </b> {{ $project->type->name }}
+                </h5>
             </div>
 
             <div class="card-footer ">
