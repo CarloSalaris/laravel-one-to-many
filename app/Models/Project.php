@@ -13,6 +13,16 @@ class Project extends Model
         'title',
         'framework',
         'description',
-        'user_id'
+        'user_id',
+        'type_id'
+
     ];
+
+    public function user() {
+        return $this->belongsTo(User :: class);
+    }
+
+    public function type() {
+        return $this->belongsTo(Type :: class);
+    }
 }
