@@ -13,6 +13,7 @@ class Project extends Model
         'title',
         'framework',
         'description',
+
         'user_id',
         'type_id'
 

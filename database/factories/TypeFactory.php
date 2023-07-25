@@ -17,7 +17,7 @@ class TypeFactory extends Factory
     public function definition()
     {
         return [
-            "name"=>fake()->randomElement(['Front-End', 'Back-End', 'Full-Stack']),
+            "name"=>fake()->unique()->randomElement(['Front-End', 'Back-End', 'Full-Stack']),
             "description"=>fake()->paragraph
         ];
     }
